@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBgHome">#8AA4AA</color>
+    <color name="colorPrimaryFont">#FFFFFF</color>
+    <color name="colorBgSuccess">#22B573</color>
+    <color name="colorBgwait">#808080</color>
+    <color name="colorBgpass">#355360</color>
+    <color name="colorPassCode">#52717C</color>
+    <color name="colorBgFail">#B26A59</color>
+
+</resources>

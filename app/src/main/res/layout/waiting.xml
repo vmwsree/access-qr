@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/colorBgwait">
+    <com.github.rahatarmanahmed.cpv.CircularProgressView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progress_view"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:cpv_animAutostart="true"
+        app:cpv_color="@color/colorPrimaryFont"
+        app:cpv_indeterminate="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="149dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/infoicn"
+        android:layout_alignParentRight="true"
+
+        android:layout_margin="14dp"
+        android:background="@drawable/info"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please wait!"
+        android:textColor="@color/colorPrimaryFont"
+        android:fontFamily="sans-serif-light"
+        android:textSize="47dp"
+        android:paddingTop="80dp"
+        android:id="@+id/waitTxt"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

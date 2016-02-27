@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/colorBgSuccess">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:textSize="37dp"
+        android:layout_marginTop="10dp"
+        android:text="Access Granted!"
+        android:id="@+id/accessG"
+        android:textColor="@color/colorPrimaryFont"
+        android:layout_centerInParent="true"
+
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settingsBtn"
+        android:layout_alignParentRight="true"
+
+        android:layout_margin="14dp"
+        android:background="@drawable/settings"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/infobtn"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:layout_margin="14dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/info"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/successicn"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/accessG"
+
+        android:layout_marginBottom="7dp"
+
+        android:background="@drawable/successicn"
+     />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:textSize="19dp"
+        android:text=""
+        android:id="@+id/usernamelabel"
+        android:textColor="@color/colorPrimaryFont"
+        android:layout_marginTop="14dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/accessG"
+        />
+
+
+</RelativeLayout>

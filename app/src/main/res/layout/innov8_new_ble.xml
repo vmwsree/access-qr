@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:id="@+id/linearLayout2">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Start Bluetooth"
+            android:id="@+id/startBle" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="SCAN QR"
+            android:id="@+id/scanBtn" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:text="TEST"
+            android:id="@+id/testBtn" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:text="Connectivity"
+            android:id="@+id/interet" />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:text="Settings"
+            android:id="@+id/settingsBtn" />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:text="Data sync"
+            android:id="@+id/syncBtn" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout Mode"
+            android:id="@+id/toggleBtn" />
+    </LinearLayout>
+
+
+</RelativeLayout>

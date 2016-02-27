@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.innov8.innov8" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.usb.host" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".ParseInit">
+
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="HpIMDagDJpEC1NNvgiuUFLZ1vcccMlQmdkWVwzSo" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="444qjqONG6N9zMiNZhJj21CrdWCwNv1qReJiKoHk" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity>
+
+        <activity android:name=".NewUIStart">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeActivity" >
+        </activity>
+
+        <activity android:name=".PasswordAccess"
+            >
+        </activity>
+        <activity android:name=".ParseActivity" >
+            <meta-data
+                android:name="com.parse.APPLICATION_ID"
+                android:value="HpIMDagDJpEC1NNvgiuUFLZ1vcccMlQmdkWVwzSo" />
+            <meta-data
+                android:name="com.parse.CLIENT_KEY"
+                android:value="444qjqONG6N9zMiNZhJj21CrdWCwNv1qReJiKoHk" />
+        </activity>
+    </application>
+
+</manifest>

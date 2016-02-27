@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Innov8</string>
+    <string name="arduino_nano">98:D3:32:10:41:E8</string>
+    <string name="arduino_uno">98:D3:32:30:3A:92</string>
+</resources>

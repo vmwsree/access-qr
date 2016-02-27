@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgpass">
+
+
+    <EditText
+        android:layout_width="201dp"
+        android:layout_height="57dp"
+        android:inputType="numberPassword"
+        android:ems="10"
+        android:cursorVisible="false"
+        android:textColor="@color/colorPrimaryFont"
+        android:textSize="26dp"
+        android:textAlignment="center"
+        android:background="@color/colorPassCode"
+        android:id="@+id/passinput"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info"
+        android:layout_alignParentRight="true"
+
+        android:layout_margin="14dp"
+        android:background="@drawable/info"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/back"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:layout_margin="14dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/back"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:textSize="24dp"
+        android:text="Enter Access Code"
+        android:id="@+id/accesslabel"
+        android:textColor="@color/colorPrimaryFont"
+        android:layout_above="@id/passinput"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="18dp"
+        />
+
+</RelativeLayout>
