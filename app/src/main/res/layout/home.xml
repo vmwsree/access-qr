@@ -4,66 +4,21 @@
     android:layout_height="match_parent" android:background="@color/colorBgHome">
 
 
-    <ImageView
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/mainBg"
-        android:background="@color/colorBgHome"
-    android:layout_centerInParent="true" />
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/mainLogo"
-        android:background="@drawable/mainlogowht"
-        android:layout_centerInParent="true" />
+        android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-light"
-        android:textSize="27dp"
-        android:text="Hey, Welcome to"
-        android:id="@+id/welcommsg"
-        android:textColor="@color/colorPrimaryFont"
-        android:layout_above="@id/mainLogo"
-        android:layout_centerHorizontal="true"
+        <include layout="@layout/homeview"/>
 
-        android:layout_marginBottom="36dp"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-light"
-        android:textSize="16dp"
-        android:text="Swipe anywhere to Scan QR"
-        android:id="@+id/infomsg"
-        android:textColor="@color/colorPrimaryFont"
+        <include layout="@layout/waiting"/>
 
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="36dp"
-        />
+        <include layout="@layout/successpage"/>
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/settingsBtn"
-        android:layout_alignParentRight="true"
-
-        android:layout_margin="14dp"
-        android:background="@drawable/settings"
-        />
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/infobtn"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:padding="5dp"
-        android:layout_margin="14dp"
-        android:layout_alignParentRight="true"
-        android:background="@drawable/info"
-        />
+        <include layout="@layout/failpage"/>
+        <include layout="@layout/logoutconfirm"/>
+        <include layout="@layout/logouthome"/>
+    </ViewFlipper>
 
 
 </RelativeLayout>

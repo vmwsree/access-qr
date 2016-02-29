@@ -46,19 +46,7 @@ class BluetoothActivity extends AsyncTask<String, Void, String> {
     }
     protected String doInBackground(String... params) {
         try {
-            String stat="";
-            if (socket!=null){
-                if (socket.isConnected()) {
-                    socket.close();
-                    try {
-                        Thread.sleep(2000);                 //1000 milliseconds is one second.
-                    } catch(InterruptedException ex) {
-                        Thread.currentThread().interrupt();
-                    }
 
-                }
-
-            }
             Set<BluetoothDevice> pairedDevices = mBluetoothAdapter.getBondedDevices();
 // If there are paired devices
             if (pairedDevices.size() > 0) {
@@ -69,12 +57,12 @@ class BluetoothActivity extends AsyncTask<String, Void, String> {
 
                     if (logout){
                         arduino_bluetooth = arduino_uno;
-                        stat="Logout Mode, ";
+                      //  stat="Logout Mode, ";
 
                     }
                     else {
                         arduino_bluetooth= arduino_nano;
-                        stat="Login Mode, ";
+                      //  stat="Login Mode, ";
                     }
                     // Add the name and address to an array adapter to show in a ListView
                     if (mydevice.getAddress().toString().equals(arduino_bluetooth)) {
@@ -87,7 +75,7 @@ class BluetoothActivity extends AsyncTask<String, Void, String> {
                             outputStream = socket.getOutputStream();
                             inStream = socket.getInputStream();
                          //   Toast.makeText(getApplicationContext(), "  connected to Door in "+ stat+ device.getAddress(), Toast.LENGTH_SHORT).show();
-                            //outputStream.write(teststring.getBytes());
+                            outputStream.write(teststring.getBytes());
                             break;
 
                         } catch (IOException e) {
@@ -121,7 +109,20 @@ class BluetoothActivity extends AsyncTask<String, Void, String> {
     }
 
     protected void onPostExecute(Long result) {
+        try {
+            String stat = "";
+            if (socket != null) {
+                if (socket.isConnected()) {
+                    socket.close();
 
+
+                }
+
+            }
+        }
+        catch (Exception e){
+
+        }
     }
 }
  

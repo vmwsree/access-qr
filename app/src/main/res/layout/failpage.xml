@@ -8,11 +8,11 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
         android:textSize="42dp"
-        android:layout_marginTop="282dp"
+        android:layout_marginTop="10dp"
         android:text="Access Denied!"
         android:id="@+id/accessG"
         android:textColor="@color/colorPrimaryFont"
-        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
 
 
         />
@@ -40,10 +40,12 @@ android:padding="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/failicn"
+
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="169dp"
+        android:layout_above="@id/accessG"
 
         android:layout_marginBottom="7dp"
+
 
         android:background="@drawable/faillicn"
         />
